@@ -1,43 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-01-09T18:20:01Z" name="Default suite" finished-at="2019-01-09T18:20:22Z" duration-ms="20182">
+  <suite started-at="2019-03-02T04:45:38Z" name="Default suite" finished-at="2019-03-02T04:45:56Z" duration-ms="18306">
     <groups>
     </groups>
-    <test started-at="2019-01-09T18:20:01Z" name="Default test" finished-at="2019-01-09T18:20:22Z" duration-ms="20182">
-      <class name="tests.SuperTechIFramePageTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.SuperTechIFramePageTest@4e50c791]" started-at="2019-01-09T18:19:52Z" name="initialize" finished-at="2019-01-09T18:20:01Z" duration-ms="9831" status="PASS">
+    <test started-at="2019-03-02T04:45:38Z" name="Default test" finished-at="2019-03-02T04:45:56Z" duration-ms="18306">
+      <class name="tests.SuperTechHomePageTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.SuperTechHomePageTest@58a9760d]" started-at="2019-03-02T04:45:27Z" name="initialize" finished-at="2019-03-02T04:45:38Z" duration-ms="11076" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="IFrameHandling()[pri:0, instance:tests.SuperTechIFramePageTest@4e50c791]" started-at="2019-01-09T18:20:01Z" name="IFrameHandling" finished-at="2019-01-09T18:20:22Z" duration-ms="20146" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="SpTchHomePgTest1()[pri:1, instance:tests.SuperTechHomePageTest@58a9760d]" started-at="2019-03-02T04:45:38Z" name="SpTchHomePgTest1" finished-at="2019-03-02T04:45:41Z" duration-ms="2945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SpTchHomePgTest1 -->
+        <test-method signature="SpTchHomePgTest2()[pri:2, instance:tests.SuperTechHomePageTest@58a9760d]" started-at="2019-03-02T04:45:41Z" name="SpTchHomePgTest2" finished-at="2019-03-02T04:45:56Z" duration-ms="14813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SpTchHomePgTest2 -->
+        <test-method signature="SpTchHomePgTest3()[pri:3, instance:tests.SuperTechHomePageTest@58a9760d]" started-at="2019-03-02T04:45:56Z" name="SpTchHomePgTest3" finished-at="2019-03-02T04:45:56Z" duration-ms="493" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"name","selector":"LogInForm"}
-  (Session info: chrome=71.0.3578.98)
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression @FindBy (how=How.NAME, using ="")WebElement because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '@FindBy (how=How.NAME, using ="")WebElement' is not a valid XPath expression.
+  (Session info: chrome=72.0.3626.119)
   (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JAMALPC', ip: '192.168.1.155', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\chowd\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: cedc22ee22f441e95ea81e059d274573
-*** Element info: {Using=name, value=LogInForm}]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\chowd\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: 98a4d3a6d627c4c1af9de89f1a523ee0
+*** Element info: {Using=xpath, value=@FindBy (how=How.NAME, using ="")WebElement}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"LogInForm"}
-  (Session info: chrome=71.0.3578.98)
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression @FindBy (how=How.NAME, using ="")WebElement because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '@FindBy (how=How.NAME, using ="")WebElement' is not a valid XPath expression.
+  (Session info: chrome=72.0.3626.119)
   (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'JAMALPC', ip: '192.168.1.155', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\chowd\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: cedc22ee22f441e95ea81e059d274573
-*** Element info: {Using=name, value=LogInForm}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\chowd\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: 98a4d3a6d627c4c1af9de89f1a523ee0
+*** Element info: {Using=xpath, value=@FindBy (how=How.NAME, using ="")WebElement}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -51,16 +61,14 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy12.getWrappedElement(Unknown Source)
-at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:891)
-at pages.SuperTechIFramePage.SwitchToLogInForm(SuperTechIFramePage.java:28)
-at tests.SuperTechIFramePageTest.IFrameHandling(SuperTechIFramePageTest.java:13)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at pages.SuperTechHomePage.VedioOnAgile(SuperTechHomePage.java:151)
+at tests.SuperTechHomePageTest.SpTchHomePgTest3(SuperTechHomePageTest.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -88,15 +96,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- IFrameHandling -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.SuperTechIFramePageTest@4e50c791]" started-at="2019-01-09T18:20:22Z" name="TearDown" finished-at="2019-01-09T18:20:22Z" duration-ms="773" status="PASS">
+        </test-method> <!-- SpTchHomePgTest3 -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.SuperTechHomePageTest@58a9760d]" started-at="2019-03-02T04:45:56Z" name="TearDown" finished-at="2019-03-02T04:45:57Z" duration-ms="996" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- tests.SuperTechIFramePageTest -->
+      </class> <!-- tests.SuperTechHomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

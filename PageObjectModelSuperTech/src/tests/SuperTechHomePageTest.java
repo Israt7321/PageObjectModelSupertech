@@ -44,7 +44,7 @@ public class SuperTechHomePageTest extends BaseTest {
 	@Test(priority=3)
 	public void SpTchHomePgTest3() throws InterruptedException {
 		SuperTechHomePage STMP=PageFactory.initElements(driver,SuperTechHomePage.class);
-		STMP.FileUpload("");
+		STMP.FileUpload("C:\\InterviewQuestions\\Israt.Jahan-Resume(Updated).docx");
 		STMP.FileDownloadExcel();
 		STMP.FileDownloadPdf();
 		STMP.VedioOnAgile();
